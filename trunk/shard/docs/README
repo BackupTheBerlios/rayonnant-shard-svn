@@ -1,0 +1,40 @@
+
+This package is designed for use with the latest version of Wolfpack.
+Wolfpack Homepage: http://www.wpdev.org/
+
+Place this entire package in: /path/to/wolfpack_shard/
+
+You should then have: /path/to/wolfpack_shard/rayonnant/
+
+Then open /path/to/wolfpack_shard/wolfpack.xml and change the following
+
+For definitions change:
+	<!-- Old -->
+	<option key="Definitions" value="definitions/index.xml" />
+	<!-- New -->
+	<option key="Definitions" value="definitions/index.xml;rayonnant/definitions/index.xml" />
+
+For scripts change:
+	<!-- Old -->
+	<option key="Python Searchpath" value="./scripts;." />
+	<!-- New -->
+	<option key="Python Searchpath" value="./scripts;./rayonnant;." />
+
+After this you may want to change the starting locations:
+
+	<group name="StartLocation" >
+		<option key="Location 1" value="Yew=1508,1687,10,0" />
+		<option key="Location 2" value="Minoc=1508,1687,10,0" />
+		<option key="Location 3" value="Britain=1508,1687,10,0" />
+		<option key="Location 4" value="Moonglow=1508,1687,10,0" />
+		<option key="Location 5" value="Trinsic=1508,1687,10,0" />
+		<option key="Location 6" value="Magincia=1508,1687,10,0" />
+		<option key="Location 7" value="Jhelom=1508,1687,10,0" />
+		<option key="Location 8" value="Skara Brae=1508,1687,10,0" />
+		<option key="Location 9" value="Vesper=1508,1687,10,0" />
+	</group>
+
+Using that should have your players always start in Thalos.
+
+Thank you and enjoy!
+

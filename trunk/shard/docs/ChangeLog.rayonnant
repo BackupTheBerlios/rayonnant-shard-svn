@@ -1,0 +1,9 @@
+Rayonnant 1.0.0 ChangeLog
+
+Rayonnant YYYYMMDD (SVN):
+
+
+Rayonnant 20050306:
+	- Established SVN
+	- New base file structure: shard/rayonnant/
+	- New release standards: shard/docs/release.html

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+/*
+ * Rayonnant Scripts
+ * Copyright 2004 by holders identified in shard/docs/authors.xml
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Palace - Suite 330, Boston, MA 02111-1307, USA.
+ *
+ * In addition to that license, if you are running this program or modified
+ * versions of it on a public system you HAVE TO make the complete source of
+ * the version used by you available or provide people with a location to
+ * download it.
+ *
+ * Rayonnant Shard Home: http://developer.berlios.de/projects/rayonnant-shard/
+ * Official Shard: http://shard.rayonnant.net/
+ */
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Rayonnant Shard Release Information</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h2>Rayonnant Shard Release Information</h2>
+	<!--***********************************************************************-->
+	<h5>General Information</h5>
+	<div>
+		The Rayonnant Shard will have three types of releases:
+		<ul>
+			<li><a href="#maps">Map file releases.</a></li>
+			<li><a href="#scripts">Definitions and scripts releases.</a></li>
+			<li><a href="#phases">Package or phase based releases.</a></li>
+		</ul>
+	</div>
+	<!--***********************************************************************-->
+	<a id="maps"></a>
+	<h5>Map File Releases</h5>
+	<div>
+		The map files are a vital part to this project. We will have timestamped
+		releases with these files. Releases will be provided with BitTorrents to
+		promote a shared release system due to these being the largest of the file
+		releases.
+		<br /><br />
+		Example archived map release: <tt>shard-map_YYYYMMDD.tar.bz2</tt><br />
+		Example torrent map release: <tt>shard-map_YYYYMMDD.tar.bz2.torrent</tt>
+		<br /><br />
+		BitTorrents can be made with the following command:<br />
+		<tt>btmakemetafile.py shard-map_YYYYMMDD.tar.bz2 \<br />
+		&#160;&#160;&#160;&#160;http://rayonnant.net:7000/announce \<br />
+		&#160;&#160;&#160;&#160;--comment "http://shard.rayonnant.net"</tt>
+	</div>
+	<!--***********************************************************************-->
+	<a id="scripts"></a>
+	<h5>Definition and Script Releases</h5>
+	<div>
+		The definitions and scripts are another vital part of the project. These
+		are also developed sporadicly so we will also be using a timestamped
+		release method here.
+		<br /><br />
+		Example archived scripts release: <tt>shard-scripts_YYYYMMDD.tar.bz2</tt>
+	</div>
+	<!--***********************************************************************-->
+	<a id="phases"></a>
+	<h5>Phase Based Releases</h5>
+	<div>
+		The Rayonnant Shard has three phases layed out:
+		<ul>
+			<li>Phase 1: Building of the world's map data.</li>
+			<li>Phase 2: Scripting the world's events and objects.</li>
+			<li>Phase 3: Bug hunting and general testing.</li>
+		</ul>
+		Due to the development style of this project, we will have packaged releases
+		based on a phase and timestamp method. It is possible for releases to be
+		between phases. However we will not be between phase 1 and phase3.
+		<br /><br />
+		An example of a phase release: <tt>shard_phase1_20050306.tar.bz2</tt>
+		<br />
+		An example of a mix phased release: <tt>shard_phase1-2_20050306.tar.bz2</tt>
+	</div>
+	<!--***********************************************************************-->
+</body>
+</html>

@@ -1,0 +1,352 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+/*
+ * Rayonnant Scripts
+ * Copyright 2004 by holders identified in shard/docs/authors.xml
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Palace - Suite 330, Boston, MA 02111-1307, USA.
+ *
+ * In addition to that license, if you are running this program or modified
+ * versions of it on a public system you HAVE TO make the complete source of
+ * the version used by you available or provide people with a location to
+ * download it.
+ *
+ * Rayonnant Shard Home: http://developer.berlios.de/projects/rayonnant-shard/
+ * Official Shard: http://shard.rayonnant.net/
+ */
+-->
+
+<definitions>
+
+	<spawnregion id="thalos_farms">
+		<inactive />
+		<checkfreespot />
+		<delay>3600</delay>
+		<group>thalos_farms</group>
+	</spawnregion>
+
+	<!-- Farm Plot 1 -->
+	<spawnregion id="thalos_farms_01" inherit="thalos_farms">
+		<active />
+		<delay>1</delay>
+		<maxitemamount>35</maxitemamount>
+		<maxnpcamount>1</maxnpcamount>
+		<npcspercycle>1</npcspercycle>
+		<itemspercycle>8</itemspercycle>
+		<!-- NPC LIST -->
+		<npc id="rabbit"><npcwander type="circle" radius="10" /></npc>
+		<npc id="sheep_unsheered"><npcwander type="circle" radius="10" /></npc>
+		<npc id="sheep_sheered"><npcwander type="circle" radius="10" /></npc>
+		<npc id="goat"><npcwander type="circle" radius="10" /></npc>
+		<!-- ITEM LIST -->
+		<item id="c5c"></item>
+		<item id="c5d"></item>
+		<item id="c64"></item>
+		<item id="c65"></item>
+		<item id="c6a"></item>
+		<item id="c6b"></item>
+		<item id="c70"></item>
+		<item id="c71"></item>
+		<item id="c7b"></item>
+		<item id="c7c"></item>
+		<item id="c79"></item>
+		<item id="c7a"></item>
+		<item id="c78"></item>
+		<item id="c75"></item>
+		<rectangle from="1411,1852" to="1418,1860" map="0" />
+		<rectangle from="1419,1852" to="1419,1859" map="0" />
+		<rectangle from="1420,1852" to="1423,1860" map="0" />
+	</spawnregion>
+
+	<!-- Farm Plot 2 -->
+	<spawnregion id="thalos_farms_02" inherit="thalos_farms">
+		<active />
+		<maxitemamount>35</maxitemamount>
+		<maxnpcamount>1</maxnpcamount>
+		<npcspercycle>1</npcspercycle>
+		<itemspercycle>8</itemspercycle>
+		<delay>1</delay>
+		<npc id="rabbit"><npcwander type="circle" radius="10" /></npc>
+		<npc id="sheep_unsheered"><npcwander type="circle" radius="10" /></npc>
+		<npc id="sheep_sheered"><npcwander type="circle" radius="10" /></npc>
+		<npc id="goat"><npcwander type="circle" radius="10" /></npc>
+		<item id="c5c"></item>
+		<item id="c5d"></item>
+		<item id="c64"></item>
+		<item id="c65"></item>
+		<item id="c6a"></item>
+		<item id="c6b"></item>
+		<item id="c70"></item>
+		<item id="c71"></item>
+		<item id="c7b"></item>
+		<item id="c7c"></item>
+		<item id="c79"></item>
+		<item id="c7a"></item>
+		<item id="c78"></item>
+		<item id="c75"></item>
+		<rectangle from="1407,1863" to="1421,1870" map="0" />
+		<rectangle from="1422,1863" to="1424,1870" map="0" />
+	</spawnregion>
+
+	<!-- Farm Plot 3 -->
+	<spawnregion id="thalos_farms_03" inherit="thalos_farms">
+		<active />
+		<delay>1</delay>
+		<maxitemamount>35</maxitemamount>
+		<maxnpcamount>1</maxnpcamount>
+		<npcspercycle>1</npcspercycle>
+		<itemspercycle>8</itemspercycle>
+		<npc id="rabbit"><npcwander type="circle" radius="10" /></npc>
+		<npc id="sheep_unsheered"><npcwander type="circle" radius="10" /></npc>
+		<npc id="sheep_sheered"><npcwander type="circle" radius="10" /></npc>
+		<npc id="goat"><npcwander type="circle" radius="10" /></npc>
+		<item id="c5c"></item>
+		<item id="c5d"></item>
+		<item id="c64"></item>
+		<item id="c65"></item>
+		<item id="c6a"></item>
+		<item id="c6b"></item>
+		<item id="c70"></item>
+		<item id="c71"></item>
+		<item id="c7b"></item>
+		<item id="c7c"></item>
+		<item id="c79"></item>
+		<item id="c7a"></item>
+		<item id="c78"></item>
+		<item id="c75"></item>
+		<rectangle from="1397,1846" to="1402,1859" map="0" />
+	</spawnregion>
+
+	<!-- Farm Plot 4 -->
+	<spawnregion id="thalos_farms_04" inherit="thalos_farms">
+		<active />
+		<npcspercycle>1</npcspercycle>
+		<maxnpcamount>8</maxnpcamount>
+		<delay>1</delay>
+		<npc id="sheep_unsheered"><npcwander type="circle" radius="10" /></npc>
+		<npc id="sheep_sheered"><npcwander type="circle" radius="10" /></npc>
+		<npc id="goat"><npcwander type="circle" radius="10" /></npc>
+		<npc id="cow"><npcwander type="circle" radius="10" /></npc>
+		<npc id="cow"><npcwander type="circle" radius="10" /></npc>
+		<npc id="bull"><npcwander type="circle" radius="10" /></npc>
+		<npc id="horse"><npcwander type="circle" radius="10" /></npc>
+		<npc id="llama"><npcwander type="circle" radius="10" /></npc>
+		<npc id="pig"><npcwander type="circle" radius="10" /></npc>
+		<rectangle from="1280,1803" to="1308,1845" map="0" />
+	</spawnregion>
+
+	<!-- Farm Plot 5 -->
+	<spawnregion id="thalos_farms_05" inherit="thalos_farms">
+		<inactive />
+		<delay>1</delay>
+		<maxitemamount>20</maxitemamount>
+		<maxnpcamount>1</maxnpcamount>
+		<npcspercycle>1</npcspercycle>
+		<itemspercycle>1</itemspercycle>
+		<npc id="rabbit"><npcwander type="circle" radius="10" /></npc>
+		<npc id="sheep_unsheered"><npcwander type="circle" radius="10" /></npc>
+		<npc id="sheep_sheered"><npcwander type="circle" radius="10" /></npc>
+		<npc id="goat"><npcwander type="circle" radius="10" /></npc>
+		<item id="c5c"></item>
+		<item id="c5d"></item>
+		<item id="c64"></item>
+		<item id="c65"></item>
+		<item id="c6a"></item>
+		<item id="c6b"></item>
+		<item id="c70"></item>
+		<item id="c71"></item>
+		<item id="c7b"></item>
+		<item id="c7c"></item>
+		<item id="c79"></item>
+		<item id="c7a"></item>
+		<item id="c78"></item>
+		<item id="c75"></item>
+		<rectangle from="1295,1818" to="1302,1831" map="0" />
+		<rectangle from="1295,1832" to="1300,1833" map="0" />
+	</spawnregion>
+
+	<!-- Farm Plot 6 -->
+	<spawnregion id="thalos_farms_06" inherit="thalos_farms">
+		<inactive />
+		<maxitemamount>20</maxitemamount>
+		<maxnpcamount>1</maxnpcamount>
+		<npcspercycle>1</npcspercycle>
+		<itemspercycle>8</itemspercycle>
+		<delay>1</delay>
+		<npc id="rabbit"><npcwander type="circle" radius="10" /></npc>
+		<npc id="sheep_unsheered"><npcwander type="circle" radius="10" /></npc>
+		<npc id="sheep_sheered"><npcwander type="circle" radius="10" /></npc>
+		<npc id="goat"><npcwander type="circle" radius="10" /></npc>
+		<item id="c5c"></item>
+		<item id="c5d"></item>
+		<item id="c64"></item>
+		<item id="c65"></item>
+		<item id="c6a"></item>
+		<item id="c6b"></item>
+		<item id="c70"></item>
+		<item id="c71"></item>
+		<item id="c7b"></item>
+		<item id="c7c"></item>
+		<item id="c79"></item>
+		<item id="c7a"></item>
+		<item id="c78"></item>
+		<item id="c75"></item>
+		<rectangle from="1282,1819" to="1289,1833" map="0" />
+		<rectangle from="1282,1818" to="1287,1818" map="0" />
+	</spawnregion>
+
+	<!-- Farm Plot 7 -->
+	<spawnregion id="thalos_farms_07" inherit="thalos_farms">
+		<active />
+		<maxitemamount>45</maxitemamount>
+		<maxnpcamount>2</maxnpcamount>
+		<npcspercycle>1</npcspercycle>
+		<itemspercycle>8</itemspercycle>
+		<delay>1</delay>
+		<npc id="rabbit"><npcwander type="circle" radius="10" /></npc>
+		<npc id="sheep_unsheered"><npcwander type="circle" radius="10" /></npc>
+		<npc id="sheep_sheered"><npcwander type="circle" radius="10" /></npc>
+		<npc id="goat"><npcwander type="circle" radius="10" /></npc>
+		<item id="c5c"></item>
+		<item id="c5d"></item>
+		<item id="c64"></item>
+		<item id="c65"></item>
+		<item id="c6a"></item>
+		<item id="c6b"></item>
+		<item id="c70"></item>
+		<item id="c71"></item>
+		<item id="c7b"></item>
+		<item id="c7c"></item>
+		<item id="c79"></item>
+		<item id="c7a"></item>
+		<item id="c78"></item>
+		<item id="c75"></item>
+		<rectangle from="1253,1867" to="1272,1896" map="0" />
+		<rectangle from="1281,1867" to="1291,1872" map="0" />
+		<rectangle from="1282,1876" to="1291,1878" map="0" />
+		<rectangle from="1279,1879" to="1291,1882" map="0" />
+	</spawnregion>
+
+	<!-- Farm Plot 8 -->
+	<spawnregion id="thalos_farms_08" inherit="thalos_farms">
+		<active />
+		<maxitemamount>55</maxitemamount>
+		<maxnpcamount>3</maxnpcamount>
+		<npcspercycle>1</npcspercycle>
+		<itemspercycle>16</itemspercycle>
+		<delay>1</delay>
+		<npc id="rabbit"><npcwander type="circle" radius="10" /></npc>
+		<npc id="sheep_unsheered"><npcwander type="circle" radius="10" /></npc>
+		<npc id="sheep_sheered"><npcwander type="circle" radius="10" /></npc>
+		<npc id="goat"><npcwander type="circle" radius="10" /></npc>
+		<item id="c5c"></item>
+		<item id="c5d"></item>
+		<item id="c64"></item>
+		<item id="c65"></item>
+		<item id="c6a"></item>
+		<item id="c6b"></item>
+		<item id="c70"></item>
+		<item id="c71"></item>
+		<item id="c7b"></item>
+		<item id="c7c"></item>
+		<item id="c79"></item>
+		<item id="c7a"></item>
+		<item id="c78"></item>
+		<item id="c75"></item>
+		<rectangle from="1249,1782" to="1262,1801" map="0" />
+	</spawnregion>
+
+	<!-- Farm Plot 9 -->
+	<spawnregion id="thalos_farms_09" inherit="thalos_farms">
+		<active />
+		<maxitemamount>25</maxitemamount>
+		<maxnpcamount>1</maxnpcamount>
+		<npcspercycle>1</npcspercycle>
+		<itemspercycle>10</itemspercycle>
+		<delay>1</delay>
+		<npc id="rabbit"><npcwander type="circle" radius="10" /></npc>
+		<npc id="sheep_unsheered"><npcwander type="circle" radius="10" /></npc>
+		<npc id="sheep_sheered"><npcwander type="circle" radius="10" /></npc>
+		<npc id="goat"><npcwander type="circle" radius="10" /></npc>
+		<item id="c5c"></item>
+		<item id="c5d"></item>
+		<item id="c64"></item>
+		<item id="c65"></item>
+		<item id="c6a"></item>
+		<item id="c6b"></item>
+		<item id="c70"></item>
+		<item id="c71"></item>
+		<item id="c7b"></item>
+		<item id="c7c"></item>
+		<item id="c79"></item>
+		<item id="c7a"></item>
+		<item id="c78"></item>
+		<item id="c75"></item>
+		<!-- Plot 1 -->
+		<rectangle from="1230,1796" to="1236,1798" map="0" />
+		<rectangle from="1235,1799" to="1237,1799" map="0" />
+		<rectangle from="1231,1795" to="1235,1795" map="0" />
+		<!-- Plot 2 -->
+		<rectangle from="1234,1791" to="1238,1793" map="0" />
+		<rectangle from="1236,1794" to="1238,1794" map="0" />
+		<rectangle from="1234,1790" to="1237,1790" map="0" />
+		<!-- Plot 3 -->
+		<rectangle from="1225,1781" to="1227,1783" map="0" />
+		<rectangle from="1226,1784" to="1228,1784" map="0" />
+		<rectangle from="1228,1782" to="1228,1783" map="0" />
+	</spawnregion>
+
+	<!-- Farm Plot 10 -->
+	<!-- Animal Pen 1 -->
+	<spawnregion id="thalos_farms_10" inherit="thalos_farms">
+		<active />
+		<delay>1</delay>
+		<maxnpcamount>9</maxnpcamount>
+		<npcspercycle>9</npcspercycle>
+		<npc id="sheep_unsheered"><npcwander type="circle" radius="10" /></npc>
+		<npc id="sheep_sheered"><npcwander type="circle" radius="10" /></npc>
+		<npc id="goat"><npcwander type="circle" radius="10" /></npc>
+		<npc id="cow"><npcwander type="circle" radius="10" /></npc>
+		<npc id="cow"><npcwander type="circle" radius="10" /></npc>
+		<npc id="bull"><npcwander type="circle" radius="10" /></npc>
+		<npc id="horse"><npcwander type="circle" radius="10" /></npc>
+		<npc id="llama"><npcwander type="circle" radius="10" /></npc>
+		<npc id="pig"><npcwander type="circle" radius="10" /></npc>
+		<rectangle from="1226,1816" to="1246,1834" map="0" />
+	</spawnregion>
+
+	<!-- Farm Plot 11 -->
+	<!-- Tree Orchard -->
+	<spawnregion id="thalos_farms_11" inherit="thalos_farms">
+		<active />
+		<delay min="1" max="15" />
+		<maxitemamount>25</maxitemamount>
+		<itemspercycle>12</itemspercycle>
+		<item id="apple_tree_gem"></item>
+		<rectangle from="1187,1769" to="1187,1740" map="0" />
+		<rectangle from="1191,1769" to="1191,1740" map="0" />
+		<rectangle from="1195,1769" to="1195,1740" map="0" />
+		<rectangle from="1199,1769" to="1199,1740" map="0" />
+		<rectangle from="1203,1769" to="1203,1740" map="0" />
+		<rectangle from="1207,1769" to="1207,1740" map="0" />
+		<rectangle from="1211,1769" to="1211,1740" map="0" />
+		<rectangle from="1215,1769" to="1215,1740" map="0" />
+		<rectangle from="1219,1769" to="1219,1740" map="0" />
+		<rectangle from="1223,1759" to="1223,1740" map="0" />
+		<rectangle from="1227,1759" to="1227,1740" map="0" />
+		<rectangle from="1231,1759" to="1231,1740" map="0" />
+		<rectangle from="1235,1759" to="1235,1739" map="0" />
+	</spawnregion>
+
+</definitions>

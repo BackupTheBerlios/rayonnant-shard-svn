@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+/*
+ * Rayonnant Scripts
+ * Copyright 2004 by holders identified in shard/docs/authors.xml
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Palace - Suite 330, Boston, MA 02111-1307, USA.
+ *
+ * In addition to that license, if you are running this program or modified
+ * versions of it on a public system you HAVE TO make the complete source of
+ * the version used by you available or provide people with a location to
+ * download it.
+ *
+ * Rayonnant Shard Home: http://developer.berlios.de/projects/rayonnant-shard/
+ * Official Shard: http://shard.rayonnant.net/
+ */
+-->
+
+<definitions>
+
+	<!-- GM Spots -->
+		<location id="gms_green_acres" category="GM\Green Acres">5350,80,0,0</location>
+
+	<!-- Towns -->
+		<!-- Thalos -->
+		<location id="thalos_entrance" category="Towns\Thalos\Thalos Entrance">1508,1687,10,0</location>
+		<location id="thalos_bank" category="Towns\Thalos\Thalos Bank">1421,1778,0,0</location>
+		<location id="thalos_inn" category="Towns\Thalos\Thalos Inn">1410,1765,0,0</location>
+		<location id="thalos_stables_1" category="Towns\Thalos\Thalos Stables 1">1496,1704,10,0</location>
+		<location id="thalos_stables_2" category="Towns\Thalos\Thalos Stables 2">1391,1775,0,0</location>
+		<location id="thalos_stables_3" category="Towns\Thalos\Thalos Stables 3">1255,1831,0,0</location>
+		<location id="thalos_orchard" category="Towns\Thalos\Orchard">1213,1784,0,0</location>
+		<location id="thalos_farms_1" category="Towns\Thalos\Thalos Farms 1">1277,11874,0,0</location>
+		<location id="thalos_farms_2" category="Towns\Thalos\Thalos Farms 2">1234,1785,0,0</location>
+		<location id="thalos_farms_3" category="Towns\Thalos\Thalos Farms 3">1407,1860,0,0</location>
+
+		<!-- Aurum -->
+		<location id="aurum_entrance" category="Towns\Aurum\Aurum (Entrance)">1546,1239,0,0</location>
+
+	<!-- Dungeons -->
+		<!-- Bunny Den -->
+		<location id="bunny_den_entrance" category="Dungeons\Bunny Den\Bunny Den (Entrance)">5427,330,10,0</location>
+
+	<!-- Wilderness -->
+		<location id="wild_spider_camp" category="Wild\Spider Camp">1993,1164,5,0</location>
+		<location id="wild_orc_mnt_camp" category="Wild\Orc Mnt Camp">1415,1055,0,0</location>
+		<!-- Snowy Plains -->
+		<location id="snowplains_eastbank" category="Wild\Snowy Plains\East Bank">1485,565,0,0</location>
+		<location id="snowplains_westbank" category="Wild\Snowy Plains\West Bank">1355,565,0,0</location>
+		<!-- Great Desert -->
+		<location id="great_desert_south_entrance" category="Wild\Great Desert\South Entrance">820,2826,0,0</location>
+		<location id="great_desert_north_entrance" category="Wild\Great Desert\North Entrance">805,2632,0,0</location>
+		<location id="great_desert_south_exit" category="Wild\Great Desert\South Exit">960,2760,0,0</location>
+		<location id="great_desert_north_exit" category="Wild\Great Desert\North Exit">950,2850,0,0</location>
+		<location id="great_desert_east" category="Wild\Great Desert\East">1130,2740,0,0</location>
+		<location id="great_desert_west" category="Wild\Great Desert\West">1105,2780,0,0</location>
+		<location id="great_desert_south" category="Wild\Great Desert\South">1055,2935,0,0</location>
+		<!-- Great Plains -->
+		<location id="great_plains_road_fork" category="Wild\Great Plains\Road Fork">1915,1600,10,0</location>
+
+		<!-- Lost Jungle -->
+		<location id="lost_jungle_swcoast" category="Wild\Lost Jungle\SW Coast">645,2870,0,0</location>
+		<!-- Eastern Jungle -->
+		<location id="east_jungle_wcoast" category="Wild\East Jungle\West Coast">2300,2315,0,0</location>
+		<location id="east_jungle_ecoast" category="Wild\East Jungle\East Coast">3075,2135,0,0</location>
+		<location id="east_jungle_scoast" category="Wild\East Jungle\South Coast">2725,2255,0,0</location>
+		<!-- Great Swamp -->
+		<location id="great_swamp_lavadomes" category="Wild\Great Swamp\Lava Domes">1015,2260,5,0</location>
+		<location id="great_swamp_north" category="Wild\Great Swamp\North Side">1150,1940,0,0</location>
+		<location id="great_swamp_south" category="Wild\Great Swamp\South Side">1196,2300,0,0</location>
+		<!-- Great Jungle -->
+		<location id="great_jungle_north" category="Wild\Great Jungle\North Side">1656,2380,0,0</location>
+		<location id="great_jungle_east" category="Wild\Great Jungle\East Side">1735,2825,0,0</location>
+		<location id="great_jungle_south" category="Wild\Great Jungle\South Side">1400,3265,0,0</location>
+		<location id="great_jungle_west" category="Wild\Great Jungle\West Side">855,3277,0,0</location>
+		<location id="great_jungle_center" category="Wild\Great Jungle\Center Mountain">1250,3015,0,0</location>
+
+</definitions>

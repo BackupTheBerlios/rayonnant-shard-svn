@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+/*
+ * Rayonnant Scripts
+ * Copyright 2004 by holders identified in shard/docs/authors.xml
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Palace - Suite 330, Boston, MA 02111-1307, USA.
+ *
+ * In addition to that license, if you are running this program or modified
+ * versions of it on a public system you HAVE TO make the complete source of
+ * the version used by you available or provide people with a location to
+ * download it.
+ *
+ * Rayonnant Shard Home: http://developer.berlios.de/projects/rayonnant-shard/
+ * Official Shard: http://shard.rayonnant.net/
+ */
+-->
+
+<definitions>
+
+	<npc id="shadow_hunter">
+		<name>shadow hunter</name>
+		<id>302</id>
+		<skin>0x497</skin>
+		<karma>0</karma>
+		<fame>0</fame>
+		<!-- AI -->
+		<ai>Monster_Aggressive_L0</ai>
+		<direction><random min="0" max="7" /></direction>
+		<!-- Stats -->
+		<str><random min="80" max="90" /></str>
+		<dex><random min="90" max="150" /></dex>
+		<int><random min="50" max="90" /></int>
+		<!-- Status Overrides -->
+		<maxhitpoints><random min="111" max="123" /></maxhitpoints>
+		<maxmana>0</maxmana>
+		<!-- Damage -->
+		<mindamage>8</mindamage>
+		<maxdamage>17</maxdamage>
+		<!-- Damage Properties -->
+		<tag name="dmg_cold" value="30,35" type="int" />
+		<tag name="dmg_poison" value="18,25" type="int" />
+		<!-- Defense Properties -->
+		<tag name="def_physical" value="18,30" type="int" />
+		<tag name="def_fire" value="-1,-10" type="int" />
+		<tag name="def_cold" value="21,43" type="int" />
+		<tag name="def_poison" value="100" type="int" />
+		<tag name="def_energy" value="50" type="int" />
+		<!-- Skills -->
+		<skill id="anatomy"><random min="200" max="900" /></skill>
+		<skill id="tactics"><random min="600" max="900" /></skill>
+		<skill id="wrestling"><random min="600" max="900" /></skill>
+		<!-- Loot Packs -->
+		<!--<lootpacks>pack_name</lootpacks>-->
+		<!-- Misc. Stuff -->
+		<desc>The Shadow Hunter is a rarely seen yet feared creature of Rayonnant. They lurk only in the shadows as light will burn their flesh from their bones. They're fast, numerous and will even fight each other for their prey.</desc>
+		<category>Custom\Monsters\Shadow Hunter</category>
+	</npc>
+
+</definitions>

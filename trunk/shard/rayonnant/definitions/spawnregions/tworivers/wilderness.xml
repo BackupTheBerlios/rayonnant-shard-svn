@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+/*
+ * Rayonnant Scripts
+ * Copyright 2004 by holders identified in shard/docs/authors.xml
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Palace - Suite 330, Boston, MA 02111-1307, USA.
+ *
+ * In addition to that license, if you are running this program or modified
+ * versions of it on a public system you HAVE TO make the complete source of
+ * the version used by you available or provide people with a location to
+ * download it.
+ *
+ * Rayonnant Shard Home: http://developer.berlios.de/projects/rayonnant-shard/
+ * Official Shard: http://shard.rayonnant.net/
+ */
+-->
+
+<definitions>
+	<spawnregion id="tworivers_wild">
+		<inactive />
+		<checkfreespot />
+		<delay min="60" max="240" />
+		<group>tworivers_wild</group>
+	</spawnregion>
+
+	<spawnregion id="tworivers_wild_01" inherit="tworivers_wild">
+	<!--Newb area around Thalos-->
+		<active />
+		<maxnpcamount>1000</maxnpcamount>
+		<maxitemamount>1000</maxitemamount>
+		<npcspercycle>50</npcspercycle>
+		<itemspercycle>250</itemspercycle>
+		<!--Animals-->
+		<npc id="bird" frequency="5"><npcwander type="circle" radius="8" /></npc>
+		<npc id="chicken" frequency="2"><npcwander type="circle" radius="8" /></npc>
+		<npc id="eagle"><npcwander type="circle" radius="8" /></npc>
+		<npc id="black_bear"><npcwander type="circle" radius="8" /></npc>
+		<npc id="boar"><npcwander type="circle" radius="8" /></npc>
+		<npc id="brown_bear"><npcwander type="circle" radius="8" /></npc>
+		<npc id="great_hart" frequency="3"><npcwander type="circle" radius="8" /></npc>
+		<npc id="grizzly_bear"><npcwander type="circle" radius="8" /></npc>
+		<npc id="hind" frequency="5"><npcwander type="circle" radius="8" /></npc>
+		<npc id="jack_rabbit"><npcwander type="circle" radius="8" /></npc>
+		<npc id="panther"><npcwander type="circle" radius="8" /></npc>
+		<npc id="rabbit"><npcwander type="circle" radius="8" /></npc>
+		<npc id="rat"><npcwander type="circle" radius="8" /></npc>
+		<npc id="snake" frequency="2"><npcwander type="circle" radius="8" /></npc>
+		<npc id="timber_wolf"><npcwander type="circle" radius="8" /></npc>
+		<!--Monsters-->
+		<npc id="rat_giant"><npcwander type="circle" radius="8" /></npc>
+		<npc id="mongbat"><npcwander type="circle" radius="8" /></npc>
+		<item id="f7a"></item><!--black pearl-->
+		<item id="f7b"></item><!--blood moss-->
+		<item id="f84"></item><!--garlic-->
+		<item id="f85"></item><!--ginseng-->
+		<item id="f86"></item><!--mandrake root-->
+		<item id="f88"></item><!--nightshade-->
+		<item id="f8c"></item><!--sulfurous ash-->
+		<item id="f8d"></item><!--spiders silk-->
+		<rectangle from="1600,1550" to="1740,1790" map="0" /><!--1-->
+		<rectangle from="1465,1755" to="1800,1920" map="0" /><!--2-->
+		<rectangle from="1520,1675" to="1600,1755" map="0" /><!--3-->
+		<rectangle from="1315,1790" to="1360,1900" map="0" /><!--4-->
+		<rectangle from="1360,1890" to="1465,1945" map="0" /><!--5-->
+		<rectangle from="1360,1835" to="1385,1890" map="0" /><!--6-->
+		<rectangle from="1465,1920" to="1520,1985" map="0" /><!--7-->
+		<rectangle from="1600,1790" to="1640,1820" map="0" /><!--8-->
+		<rectangle from="1520,1920" to="1570,1950" map="0" /><!--9-->
+		<rectangle from="1200,1925" to="1270,1950" map="0" /><!--10-->
+		<rectangle from="1270,1925" to="1310,1965" map="0" /><!--11-->
+		<rectangle from="1290,1965" to="1355,1975" map="0" /><!--12-->
+		<rectangle from="1440,1945" to="1465,1985" map="0" /><!--13-->
+		<rectangle from="1230,1870" to="1245,1925" map="0" /><!--14-->
+		<rectangle from="1060,1720" to="1180,1825" map="0" /><!--15-->
+		<rectangle from="1195,1820" to="1225,1865" map="0" /><!--16-->
+		<rectangle from="1120,1660" to="1200,1720" map="0" /><!--17-->
+		<rectangle from="1240,1670" to="1345,1765" map="0" /><!--18-->
+		<rectangle from="1345,1630" to="1420,1735" map="0" /><!--19-->
+		<rectangle from="1420,1600" to="1515,1660" map="0" /><!--20-->
+		<rectangle from="1515,1610" to="1555,1640" map="0" /><!--21-->
+	</spawnregion>
+
+	<spawnregion id="tworivers_wild_02" inherit="tworivers_wild">
+	<!--Highlands, the Westwood, and the three lakes-->
+		<active />
+		<maxnpcamount>1000</maxnpcamount>
+		<maxitemamount>500</maxitemamount>
+		<npcspercycle>50</npcspercycle>
+		<itemspercycle>25</itemspercycle>
+		<!--Animals-->
+		<npc id="bird"><npcwander type="circle" radius="8" /></npc>
+		<npc id="cougar"><npcwander type="circle" radius="8" /></npc>
+		<npc id="great_hart"><npcwander type="circle" radius="8" /></npc>
+		<npc id="grizzly_bear"><npcwander type="circle" radius="8" /></npc>
+		<npc id="rat"><npcwander type="circle" radius="8" /></npc>
+		<npc id="snake"><npcwander type="circle" radius="8" /></npc>
+		<npc id="timber_wolf"><npcwander type="circle" radius="8" /></npc>
+		<npc id="eagle"><npcwander type="circle" radius="8" /></npc>
+		<npc id="goat"><npcwander type="circle" radius="8" /></npc>
+		<npc id="llama"><npcwander type="circle" radius="8" /></npc>
+		<npc id="grey_wolf"><npcwander type="circle" radius="8" /></npc>
+		<!--Monsters-->
+		<npc id="spider_giant"><npcwander type="circle" radius="8" /></npc>
+		<npc id="rat_giant"><npcwander type="circle" radius="8" /></npc>
+		<npc id="mongbat"><npcwander type="circle" radius="8" /></npc>
+		<npc id="orc"><npcwander type="circle" radius="8" /></npc>
+		<npc id="ratman" frequency="3"><npcwander type="circle" radius="8" /></npc>
+		<item id="f7a"></item><!--black pearl-->
+		<item id="f7b"></item><!--blood moss-->
+		<item id="f84"></item><!--garlic-->
+		<item id="f85"></item><!--ginseng-->
+		<item id="f86"></item><!--mandrake root-->
+		<item id="f88"></item><!--nightshade-->
+		<item id="f8c"></item><!--sulfurous ash-->
+		<item id="f8d"></item><!--spiders silk-->
+		<rectangle from="1745,1600" to="1820,1695" map="0" /><!--100-->
+		<rectangle from="1600,1495" to="1720,1550" map="0" /><!--101-->
+		<rectangle from="1120,1370" to="1500,1590" map="0" /><!--102-->
+		<rectangle from="1500,1495" to="1595,1570" map="0" /><!--103-->
+		<rectangle from="1500,1300" to="1640,1490" map="0" /><!--104-->
+		<rectangle from="1530,1200" to="1640,1300" map="0" /><!--105-->
+		<rectangle from="1640,1340" to="1665,1410" map="0" /><!--106-->
+		<rectangle from="1120,1590" to="1200,1645" map="0" /><!--107-->
+		<rectangle from="945,1400" to="1115,1710" map="0" /><!--108-->
+		<rectangle from="840,1395" to="945,1460" map="0" /><!--109-->
+		<rectangle from="935,1350" to="975,1390" map="0" /><!--110-->
+		<rectangle from="900,1460" to="945,1500" map="0" /><!--111-->
+		<rectangle from="890,1555" to="945,1585" map="0" /><!--112-->
+		<rectangle from="890,1625" to="945,1680" map="0" /><!--113-->
+	</spawnregion>
+
+	<spawnregion id="tworivers_wild_03" inherit="tworivers_wild">
+	<!--swamp south of Thalos-->
+		<active />
+		<maxnpcamount>8</maxnpcamount>
+		<maxitemamount>8</maxitemamount>
+		<npcspercycle>2</npcspercycle>
+		<itemspercycle>2</itemspercycle>
+		<!--Animals-->
+		<npc id="alligator"><npcwander type="circle" radius="5" /></npc>
+		<npc id="bullfrog"><npcwander type="circle" radius="5" /></npc>
+		<npc id="snake"><npcwander type="circle" radius="5" /></npc>
+		<!--Monsters-->
+		<npc id="rat_giant"><npcwander type="circle" radius="5" /></npc>
+		<npc id="mongbat_strong"><npcwander type="circle" radius="5" /></npc>
+		<item id="f7a"></item><!--black pearl-->
+		<item id="f7b"></item><!--blood moss-->
+		<item id="f88"></item><!--nightshade-->
+		<rectangle from="1340,1985" to="1380,2000" map="0" />
+		<rectangle from="1375,1970" to="1390,1985" map="0" />
+		<rectangle from="1410,1960" to="1425,1975" map="0" />
+	</spawnregion>
+
+	<spawnregion id="tworivers_wild_04" inherit="tworivers_wild">
+	<!--swamp south of Thalos-->
+		<active />
+		<maxnpcamount>5</maxnpcamount>
+		<maxitemamount>5</maxitemamount>
+		<npcspercycle>1</npcspercycle>
+		<itemspercycle>1</itemspercycle>
+		<!--Animals-->
+		<npc id="alligator"><npcwander type="circle" radius="5" /></npc>
+		<npc id="bullfrog"><npcwander type="circle" radius="5" /></npc>
+		<npc id="snake"><npcwander type="circle" radius="5" /></npc>
+		<!--Monsters-->
+		<npc id="rat_giant"><npcwander type="circle" radius="5" /></npc>
+		<npc id="mongbat_strong"><npcwander type="circle" radius="5" /></npc>
+		<npc id="lizardman" frequency="4"><npcwander type="circle" radius="5" /></npc>
+		<item id="f7a"></item><!--black pearl-->
+		<item id="f7b"></item><!--blood moss-->
+		<item id="f88"></item><!--nightshade-->
+		<rectangle from="1280,1990" to="1315,2050" map="0" />
+	</spawnregion>
+</definitions>

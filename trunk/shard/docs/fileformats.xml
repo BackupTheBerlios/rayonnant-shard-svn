@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+/*
+ * Rayonnant Scripts
+ * Copyright 2004 by holders identified in /rayonnant/authors.xml
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Palace - Suite 330, Boston, MA 02111-1307, USA.
+ *
+ * In addition to that license, if you are running this program or modified
+ * versions of it on a public system you HAVE TO make the complete source of
+ * the version used by you available or provide people with a location to
+ * download it.
+ *
+ * Rayonnant Shard Home: http://sourceforge.net/projects/rayonnant-shard/
+ * Official Shard: http://shard.rayonnant.net/
+ */
+-->
+<!--
+	This file contains several examples of script layouts I would like to see used.
+	Required only applies if there isn't an inherit which covers the information required.
+	Optional means the tag is optional.
+	Recommended just means I recommend putting this kind of tag in.
+-->
+<definitions>
+
+	<!-- File Linking -->
+	<!-- Use this only inside <definitions></definitions> -->
+	<include file="path/to/file.xml"/> <!-- Used when branching out scripts -->
+
+	<!-- NPCs -->
+	<!-- Note the use of _ instead of spaces -->
+	<!-- If we want to inherit info from another creature, then override, lets do so in the npc tag -->
+	<!-- For NPCs, we use DECIMAL values in the <id></id> slots for easy handling -->
+	<npc id="npc_name" inherit="base_info">
+		<inherit id="other_info" /> <!-- Optional, Inherits and overrides everything before this tag -->
+		<name>Burururu</name> <!-- The NPC Name, required -->
+		<title>the carpenter</title> <!-- The NPC's title, optional -->
+		<id>400</id> <!-- Required -->
+		<baseid>another_npc</baseid> <!-- Optional, overrides the baseid that is saved -->
+		<!-- Usefull Properties -->
+		<skin>0x145</skin> <!-- Optional, Hue applied to skin. Default 0x0-->
+		<ai>AI_TYPE</ai> <!-- HIGHLY RECOMMENDED -->
+		<wandertype>1</wandertype> <!-- HIGHLY RECOMMENDED -->
+		<direction><random min="0" max="7" /></direction> <!-- Optional -->
+		<karma>0</karma> <!-- Required -->
+		<fame>0</fame> <!-- Required -->
+		<!-- Stats -->
+		<str><random min="1" max="120" /></str> <!-- Required -->
+		<dex><random min="1" max="120" /></dex> <!-- Required -->
+		<int><random min="1" max="120" /></int> <!-- Required -->
+		<!-- Status Overrides -->
+		<maxhitpoints><random min="1" max="120" /></maxhitpoints> <!-- Optional -->
+		<maxstamina><random min="1" max="120" /></maxstamina> <!-- Optional -->
+		<maxmana><random min="1" max="120" /></maxmana> <!-- Optional -->
+		<!-- Damage -->
+		<mindamage>5</mindamage> <!-- Required -->
+		<maxdamage>10</maxdamage> <!-- Required -->
+		<!-- Damage Properties -->
+		<!-- INT Values: Set( "25" ) Range( "10,35" ) List( "10;15;20;25" ) -->
+		<!-- These subtract from physical damage, total of these four can NOT exceed 100! -->
+		<!-- Default is 0 -->
+		<tag name="dmg_fire" value="0" type="int" /> <!-- Optional -->
+		<tag name="dmg_cold" value="0" type="int" /> <!-- Optional -->
+		<tag name="dmg_poison" value="0" type="int" /> <!-- Optional -->
+		<tag name="dmg_energy" value="0" type="int" /> <!-- Optional -->
+		<!-- Defense Properties -->
+		<!-- INT Values: Set( "25" ) Range( "10,35" ) List( "10;15;20;25" ) -->
+		<!-- Values can NOT exceed 100! This is a % resisted -->
+		<!-- Default is 0 -->
+		<tag name="def_physical" value="1,10" type="int" /> <!-- Optional -->
+		<tag name="def_fire" value="1,10" type="int" /> <!-- Optional -->
+		<tag name="def_cold" value="1,10" type="int" /> <!-- Optional -->
+		<tag name="def_poison" value="1,10" type="int" /> <!-- Optional -->
+		<tag name="def_energy" value="1,10" type="int" /> <!-- Optional -->
+		<!-- Equipment -->
+		<!-- This gives the creature equiped objects to fight with -->
+		<equipped>
+			<item inherit="item_defname" />
+			<item inheritlist="RANDOM_FROM_LIST" />
+			<item inherit="item_defname"><!--Any Item Properties Go Here --></item>
+		</equipped>
+		<!-- Skills -->
+		<!-- Common Skills -->
+		<!-- Recommended you use only the skills needed by the NPC! -->
+		<!-- Format: <skillname>value</skillname> -->
+		<anatomy><random min="0" max="1200" /></anatomy> <!-- Recommended -->
+		<wrestling><random min="0" max="1200" /></wrestling> <!-- Recommended -->
+		<tactics><random min="0" max="1200" /></tactics> <!-- Recommended -->
+		<magery><random min="0" max="1200" /></magery> <!-- Recommended -->
+		<evaluatingintel><random min="0" max="1200" /></evaluatingintel> <!-- Recommended -->
+		<meditation><random min="0" max="1200" /></meditation> <!-- Recommended -->
+		<poisoning><random min="0" max="1200" /></poisoning> <!-- Recommended -->
+		<magicresistance><random min="0" max="1200" /></magicresistance> <!-- Recommended -->
+		<swordsmanship><random min="0" max="1200" /></swordsmanship> <!-- Recommended -->
+		<fencing><random min="0" max="1200" /></fencing> <!-- Recommended -->
+		<archery><random min="0" max="1200" /></archery> <!-- Recommended -->
+		<macefighting><random min="0" max="1200" /></macefighting> <!-- Recommended -->
+		<necromancy><random min="0" max="1200" /></necromancy> <!-- Recommended -->
+		<chivalry><random min="0" max="1200" /></chivalry> <!-- Recommended -->
+		<parrying><random min="0" max="1200" /></parrying> <!-- Recommended -->
+		<!-- Loot Packs -->
+		<!-- These are defined by a python script in Wolfpack's core! -->
+		<lootpacks>pack_name</lootpacks> <!-- Recommended -->
+		<!-- Misc. Stuff -->
+		<desc>A long description of the npc.</desc> <!-- Optional -->
+		<food>1</food> <!-- Optional -->
+		<totame>997</totame> <!-- Optional -->
+		<events>path.to.pyevent,another.pyevent</events> <!-- Optional -->
+		<category>Add\Menu\Path\Creature Name</category> <!-- Optional -->
+	</npc>
+
+	<!-- ITEMS -->
+	<!-- Note the use of _ instead of spaces -->
+	<!-- If we want to inherit info from another item, then override, lets do so in the item tag -->
+	<!-- For Items, we use HEX values in the <id></id> slots for easy handling -->
+	<item id="an_item" inherit="another_item">
+		<inherit id="other_info" /> <!-- Optional, Inherits and overrides everything before this tag -->
+		<name>an item</name> <!-- Optional, client can use cliloc info -->
+		<id>0x15</id> <!-- Required -->
+		<baseid>another_item</baseid> <!-- Optional, overrides the baseid that is saved -->
+		<!-- Useful Properties -->
+		<color></color> <!-- Color Value -->
+		<decay /><!----><nodecay /> <!-- Optional, default decay -->
+		<nodye /><!----><dye /> <!-- Optional, dye -->
+		<amount>100</amount> <!-- Optional, amount value -->
+		<durability><random min="45" max="60" /></durability> <!-- Optional, object health -->
+		<weight>7.0</weight> <!-- Optional, item weight -->
+		<!-- Vendor Related Tags -->
+		<restock>10</restock> <!-- Optional, amount to restock by -->
+		<smelt>14</smelt> <!-- Optional, returns X max resources -->
+		<buyprice>166</buyprice> <!-- Optional, Vendor Buy From Price -->
+		<sellprice>83</sellprice> <!-- Optional, Vendor Sell To Price -->
+		<!-- Special Container Tags -->
+		<content>
+			<item id="f7a"><!-- Item Properties --></item>
+		</content>
+		<!-- Common. Tag Properties -->
+		<tag name="resname" value="resourcename" value="string" /> <!-- Primary Resource Type -->
+		<tag name="resname2" value="resourcename" value="string" /> <!-- Secondary Resource Type -->
+		<tag name="remaining_uses" value="50" type="int" /> <!-- Remaining Uses -->
+		<tag name="potiontype" value="11" type="int" /> <!-- Potion Type Value -->
+		<!-- Optional Misc. Tags -->
+		<type>1009</type> <!-- Optional, Server Item Type -->
+		<events>path.pyevent,path.pyevent2</events> <!-- Python Events -->
+		<category>Add\Menu\Path\Objcet Name</category> <!-- Add Menu Path -->
+	</item>
+
+	<!-- LISTS -->
+	<!-- Note the use of _ instead of spaces and CAPITAL ID names -->
+	<!-- If we want to inherit a list and combine, use inherit in the <list> tag -->
+	<!-- We generally keep values of a common type in a list. A list of all names, or color ids for example. -->
+	<list id="LIST_NAME" inherit="OTHER_LIST">
+		<item>name</item>
+		<item>100</item>
+		<item>This should make sense.</item>
+	</list>
+
+	<!-- SPAWN REGIONS -->
+	<!-- Note the use of _ instead of spaces. -->
+	<spawnregion id="spawn_region_id">
+		<maxnpcamount>5</maxnpcamount> <!-- Max NPCs to be spawned -->
+		<!-- Spawntime, Minutes -->
+		<mintime>10</mintime> <!-- Minimum time before next spawn -->
+		<maxtime>30</maxtime> <!-- Maximum time for next spawn -->
+		<npcs> <!-- Prepare a list of NPCS -->
+			<!-- the multi="3" value adjusts the odds of that creature spawning -->
+			<!-- 3:1 odds for a headless:skeleton -->
+			<npc mult="3">headless</npc>
+			<npc mult="1">skeleton</npc>
+		</npcs>
+		<npcspercycle>1</npcspercycle> <!-- Only one can spawn at once -->
+		<rectangle x1="1337" x2="1374" y1="1493" y2="1509" map="0" /> <!-- Area For Spawn Region-->
+	</spawnregion>
+
+	<!-- WORLD REGIONS -->
+	<!-- Note the use of _ instead of spaces. -->
+	<region id="felucca_the_town_of_yew">
+		<flags>
+			<!-- Region Flags -->
+			<guarded /> <!-- Enables Guards -->
+			<noagressivemagic /> <!-- No Agressive Magic -->
+		</flags>
+		<guards>
+			<!-- Guard NPC Definitions -->
+			<list id="standard_guards" />
+		</guards>
+		<escortregion /> <!-- Region is an accepted escort region -->
+		<guardowner>the city</guardowner> <!-- You are now protected by "the city" guards -->
+		<rainchance><random min="45" max="60" /></rainchance> <!-- Chance for rain -->
+		<snowchance><random min="55" max="70" /></snowchance> <!-- Chance for snow -->
+		<rectangle x1="504" y1="951" x2="711" y2="1070" map="0" /> <!-- Area For Region -->
+		<rectangle x1="604" y1="1070" x2="666" y2="1116" map="0" /> <!-- Area For Region -->
+	</region>
+
+	<!-- TELEPORTS -->
+	<!-- This is a current workaround -->
+	<!-- Note the use of _ instead of spaces. -->
+	<region id="felucca_teleports">
+		<!-- Covers The World -->
+		<rectangle x1="1" y1="1" x2="6144" y2="4096" map="0" />
+		<!-- List of Teleports -->
+		<teleport source="512,1559,0,0" destination="5394,127,0,0" />
+		<teleport source="513,1559,0,0" destination="5395,127,0,0" />
+		<teleport source="514,1559,0,0" destination="5396,127,0,0" />
+		<!-- Make sure there is a way back -->
+		<teleport destination="512,1559,0,0" source="5394,127,0,0" />
+		<teleport destination="513,1559,0,0" source="5395,127,0,0" />
+		<teleport destination="514,1559,0,0" source="5396,127,0,0" />
+	</region>
+
+	<!-- LOCATIONS -->
+	<!-- Note the use of _ instead of spaces. -->
+	<!-- Used for the 'go command -->
+	<location id="felluca_britain" category="Felluca\Towns\Britain\Center">1500,1630,10,0</location>
+
+</definitions>

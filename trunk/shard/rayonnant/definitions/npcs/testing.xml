@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+/*
+ * Rayonnant Scripts
+ * Copyright 2004 by holders identified in shard/docs/authors.xml
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Palace - Suite 330, Boston, MA 02111-1307, USA.
+ *
+ * In addition to that license, if you are running this program or modified
+ * versions of it on a public system you HAVE TO make the complete source of
+ * the version used by you available or provide people with a location to
+ * download it.
+ *
+ * Rayonnant Shard Home: http://developer.berlios.de/projects/rayonnant-shard/
+ * Official Shard: http://shard.rayonnant.net/
+ */
+-->
+
+<definitions>
+
+	<npc id="bloodmare">
+		<name>bloodmare</name>
+		<id>190</id>
+		<skin>0x494</skin>
+		<karma><random list="KARMA_L4" /></karma>
+		<fame><random list="FAME_L4" /></fame>
+		<!-- AI -->
+		<ai>Monster_Aggressive_L0</ai>
+		<npcwander type="freely" />
+		<direction><random min="0" max="7" /></direction>
+		<!-- Stats -->
+		<str><random min="496" max="525" /></str>
+		<dex><random min="86" max="105" /></dex>
+		<int><random min="86" max="225" /></int>
+		<!-- Combat -->
+		<mindamage>9</mindamage>
+		<maxdamage>29</maxdamage>
+		<!-- Skills -->
+		<skill id="wrestling"><random min="848" max="981" /></skill>
+		<skill id="tactics"><random min="976" max="1000" /></skill>
+		<skill id="magicresistance"><random min="860" max="990" /></skill>
+		<skill id="magery"><random min="911" max="1000" /></skill>
+		<skill id="anatomy">0</skill>
+		<skill id="meditation">0</skill>
+		<!-- Misc -->
+		<totame>998</totame>
+		<food>1</food>
+		<category>Custom\Testing\Bloodmare</category>
+	</npc>
+
+	<npc id="undead_soldier_male">
+		<name><random list="NAMES_MALE" /></name>
+		<id>400</id>
+		<skin>0x89</skin>
+		<karma><random list="KARMA_L2" /></karma>
+		<fame><random list="FAME_L2" /></fame>
+		<!-- AI -->
+		<ai>Monster_Aggressive_L0</ai>
+		<!-- Stats -->
+		<str><random min="496" max="525" /></str>
+		<dex><random min="86" max="105" /></dex>
+		<int><random min="86" max="225" /></int>
+		<!-- Combat -->
+		<mindamage>9</mindamage>
+		<maxdamage>29</maxdamage>
+		<!-- Skills -->
+		<skill id="wrestling"><random min="848" max="981" /></skill>
+		<skill id="tactics"><random min="976" max="1000" /></skill>
+		<skill id="magicresistance"><random min="860" max="990" /></skill>
+		<skill id="anatomy">0</skill>
+		<!-- Equipment -->
+		<equipped>
+			<item inherit="e75" />
+			<item inheritlist="HAIR" />
+			<item inheritlist="PANTS" />
+			<item inheritlist="SHOES" />
+			<item inheritlist="SHIRTS" />
+		</equipped>
+		<!-- Misc. -->
+		<totame>951</totame>
+		<food>1</food>
+		<npcwander type="freely" />
+		<direction><random min="0" max="7" /></direction>
+		<category>Custom\Testing\Undead Soldier (Male)</category>
+	</npc>
+
+	<npc id="penisface">
+		<name>Penis Face</name>
+		<id>400</id>
+		<skin><random list="SKINS_HUMAN" /></skin>
+		<karma><random list="KARMA_L2" /></karma>
+		<fame><random list="FAME_L2" /></fame>
+		<!-- AI -->
+		<ai>Monster_Aggressive_L0</ai>
+		<wandertype>1</wandertype>
+		<direction><random min="0" max="7" /></direction>
+		<!-- Stats -->
+		<str><random min="250" max="500" /></str>
+		<dex><random min="66" max="120" /></dex>
+		<int><random min="66" max="100" /></int>
+		<!-- Skills -->
+		<skill id="wrestling"><random min="848" max="981" /></skill>
+		<skill id="tactics"><random min="976" max="1000" /></skill>
+		<skill id="magicresistance"><random min="860" max="990" /></skill>
+		<skill id="anatomy">0</skill>
+		<!-- Equipment -->
+		<equipped>
+			<item inherit="e75" />
+			<item inheritlist="HAIR" />
+			<item inheritlist="PANTS" />
+			<item inheritlist="SHOES" />
+			<item inheritlist="SHIRTS" />
+		</equipped>
+		<!-- Misc. -->
+		<category>Custom\Testing\Penis Face</category>
+	</npc>
+
+	<npc id='blahtest'>
+		<name>Mr. Test dude</name>
+		<id>400</id>
+		<skin><random list="SKINS_HUMAN" /></skin>
+		<karma><random list="KARMA_L2" /></karma>
+		<fame><random list="FAME_L2" /></fame>
+		<!-- AI -->
+		<ai>Monster_Aggressive_L0</ai>
+		<wandertype>1</wandertype>
+		<direction><random min="0" max="7" /></direction>
+		<!-- Stats -->
+		<str><random min="71" max="85" /></str>
+		<dex><random min="66" max="80" /></dex>
+		<int><random min="66" max="80" /></int>
+		<!-- Combat -->
+		<mindamage>1</mindamage>
+		<maxdamage>6</maxdamage>
+		<!-- Skills -->
+		<skill id="wrestling"><random min="848" max="981" /></skill>
+		<skill id="tactics"><random min="976" max="1000" /></skill>
+		<skill id="magicresistance"><random min="860" max="990" /></skill>
+		<skill id="anatomy">0</skill>
+		<!-- Equipment -->
+		<equipped>
+			<item inherit="e75" />
+			<item inheritlist="HAIR" />
+			<item inheritlist="PANTS" />
+			<item inheritlist="SHOES" />
+			<item inheritlist="SHIRTS" />
+		</equipped>
+		<!-- Misc. -->
+		<category>Custom\Testing\Blahtest</category>
+	</npc>
+
+	<npc id='Crazyllama' inherit="llama">
+		<name>crazy llama</name>
+		<!-- AI -->
+		<direction><random min="0" max="7" /></direction>
+		<wandertype>1</wandertype>
+		<ai>Monster_Aggressive_L0</ai>
+		<!-- Stats -->
+		<str>100</str>
+		<dex>100</dex>
+		<int>100</int>
+		<!-- Misc. -->
+		<category>Custom\Testing\Crazy Llama</category>
+	</npc>
+
+</definitions>

@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+/*
+ * Rayonnant Scripts
+ * Copyright 2004 by holders identified in shard/docs/authors.xml
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Palace - Suite 330, Boston, MA 02111-1307, USA.
+ *
+ * In addition to that license, if you are running this program or modified
+ * versions of it on a public system you HAVE TO make the complete source of
+ * the version used by you available or provide people with a location to
+ * download it.
+ *
+ * Rayonnant Shard Home: http://developer.berlios.de/projects/rayonnant-shard/
+ * Official Shard: http://shard.rayonnant.net/
+ */
+-->
+
+<definitions>
+
+	<spawnregion id="thalos_animals">
+		<inactive />
+		<delay min="60" max="240" />
+		<npcspercycle>1</npcspercycle>
+		<group>thalos_animals</group>
+	</spawnregion>
+
+	<spawnregion id="thalos_animals_01" inherit="thalos_animals">
+		<active />
+		<maxnpcamount>10</maxnpcamount>
+		<!--Animals-->
+		<npc id="bird" frequency="5"><npcwander type="circle" radius="8" /></npc>
+		<npc id="chicken"><npcwander type="circle" radius="8" /></npc>
+		<npc id="dog"><npcwander type="circle" radius="8" /></npc>
+		<npc id="cat"><npcwander type="circle" radius="8" /></npc>
+		<!--Monsters-->
+		<rectangle from="1180,1733" to="1227,1839" map="0" />
+		<rectangle from="1228,1720" to="1410,1904" map="0" />
+		<rectangle from="1411,1630" to="1570,1745" map="0" />
+		<rectangle from="1411,1746" to="1460,1880" map="0" />
+	</spawnregion>
+
+	<spawnregion id="thalos_animals_02" inherit="thalos_animals"><!--farm animals-->
+		<active />
+		<maxnpcamount>8</maxnpcamount>
+		<!--Animals-->
+		<npc id="cow"><npcwander type="circle" radius="8" /></npc>
+		<npc id="sheep_sheered"><npcwander type="circle" radius="8" /></npc>
+		<!--Monsters-->
+		<rectangle from="1280,1803" to="1308,1845" map="0" />
+	</spawnregion>
+
+	<spawnregion id="thalos_vendor">
+		<inactive />
+		<delay>240</delay>
+		<npcspercycle>1</npcspercycle>
+		<group>thalos_vendor</group>
+	</spawnregion>
+
+	<spawnregion id="thalos_vendor_tanner" inherit="thalos_vendor">
+		<active />
+		<maxnpcamount>1</maxnpcamount>
+		<npc id="tanner_male"><npcwander type="circle" radius="5" /></npc>
+		<npc id="tanner_female"><npcwander type="circle" radius="5" /></npc>
+		<point pos="1491,1705,10,0" />
+	</spawnregion>
+
+	<spawnregion id="thalos_vendor_tailor" inherit="thalos_vendor">
+		<active />
+		<maxnpcamount>1</maxnpcamount>
+		<npc id="tailor_male"><npcwander type="circle" radius="5" /></npc>
+		<npc id="tailor_female"><npcwander type="circle" radius="5" /></npc>
+		<point pos="1476,1701,13,0" />
+	</spawnregion>
+
+	<spawnregion id="thalos_vendor_blacksmith" inherit="thalos_vendor">
+		<active />
+		<maxnpcamount>1</maxnpcamount>
+		<npc id="blacksmith_male"><npcwander type="circle" radius="5" /></npc>
+		<point pos="1441,1714,0,0" />
+	</spawnregion>
+
+	<spawnregion id="thalos_vendor_tinker" inherit="thalos_vendor">
+		<active />
+		<maxnpcamount>1</maxnpcamount>
+		<npc id="tinker_male"><npcwander type="circle" radius="5" /></npc>
+		<npc id="tinker_female"><npcwander type="circle" radius="5" /></npc>
+		<point pos="1458,1686,15,0" />
+	</spawnregion>
+
+	<spawnregion id="thalos_vendor_healer" inherit="thalos_vendor">
+		<active />
+		<maxnpcamount>1</maxnpcamount>
+		<npc id="healer_male"><npcwander type="circle" radius="5" /></npc>
+		<npc id="healer_female"><npcwander type="circle" radius="5" /></npc>
+		<point pos="1472,1721,3,0" />
+	</spawnregion>
+
+	<spawnregion id="thalos_vendor_innkeeper" inherit="thalos_vendor">
+		<active />
+		<maxnpcamount>1</maxnpcamount>
+		<npc id="innkeeper_male"><npcwander type="circle" radius="5" /></npc>
+		<npc id="innkeeper_female"><npcwander type="circle" radius="5" /></npc>
+		<point pos="1409,1751,3,0" />
+	</spawnregion>
+
+	<spawnregion id="thalos_vendor_stablemaster" inherit="thalos_vendor">
+		<active />
+		<maxnpcamount>1</maxnpcamount>
+		<npc id="stablemaster_male"><npcwander type="circle" radius="5" /></npc>
+		<npc id="stablemaster_female"><npcwander type="circle" radius="5" /></npc>
+		<point pos="1388,1768,0,0" />
+	</spawnregion>
+
+	<spawnregion id="thalos_vendor_banker" inherit="thalos_vendor">
+		<active />
+		<maxnpcamount>1</maxnpcamount>
+		<npc id="banker_male"><npcwander type="circle" radius="5" /></npc>
+		<npc id="banker_female"><npcwander type="circle" radius="5" /></npc>
+		<point pos="1410,1777,3,0" />
+	</spawnregion>
+
+	<spawnregion id="thalos_vendor_provisioner" inherit="thalos_vendor">
+		<active />
+		<maxnpcamount>1</maxnpcamount>
+		<npc id="provisioner_male"><npcwander type="circle" radius="5" /></npc>
+		<npc id="provisioner_female"><npcwander type="circle" radius="5" /></npc>
+		<point pos="1412,1804,3,0" />
+	</spawnregion>
+
+	<spawnregion id="thalos_vendor_bowyer" inherit="thalos_vendor">
+		<active />
+		<maxnpcamount>1</maxnpcamount>
+		<npc id="bowyer_male"><npcwander type="circle" radius="5" /></npc>
+		<npc id="bowyer_female"><npcwander type="circle" radius="5" /></npc>
+		<point pos="1358,1757,0,0" />
+	</spawnregion>
+
+	<spawnregion id="thalos_vendor_alchemist" inherit="thalos_vendor">
+		<active />
+		<maxnpcamount>1</maxnpcamount>
+		<npc id="alchemist_male"><npcwander type="circle" radius="5" /></npc>
+		<npc id="alchemist_female"><npcwander type="circle" radius="5" /></npc>
+		<point pos="1402,1835,3,0" />
+	</spawnregion>
+
+	<spawnregion id="thalos_vendor_mage" inherit="thalos_vendor">
+		<active />
+		<maxnpcamount>1</maxnpcamount>
+		<npc id="mage_male"><npcwander type="circle" radius="5" /></npc>
+		<npc id="mage_female"><npcwander type="circle" radius="5" /></npc>
+		<point pos="1437,1790,5,0" />
+	</spawnregion>
+
+</definitions>

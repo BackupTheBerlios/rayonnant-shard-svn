@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+/*
+ * Rayonnant Scripts
+ * Copyright 2004 by holders identified in shard/docs/authors.xml
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Palace - Suite 330, Boston, MA 02111-1307, USA.
+ *
+ * In addition to that license, if you are running this program or modified
+ * versions of it on a public system you HAVE TO make the complete source of
+ * the version used by you available or provide people with a location to
+ * download it.
+ *
+ * Rayonnant Shard Home: http://developer.berlios.de/projects/rayonnant-shard/
+ * Official Shard: http://shard.rayonnant.net/
+ */
+-->
+
+<!--
+	<teleporter source="x,y,z,map" destination="x,y,z,map" />
+-->
+
+<definitions>
+
+	<!--Teleports-->
+	<!--Bunny Den Entrance-->
+	<teleporter source="1249,1506,0,0" destination="5388,296,20,0" />
+	<teleporter source="1249,1507,0,0" destination="5388,297,20,0" />
+	<teleporter source="1249,1508,0,0" destination="5388,298,20,0" />
+	<!--Bunny Den Exit-->
+	<teleporter source="5389,296,20,0" destination="1249,1507,0,0" />
+	<teleporter source="5389,297,20,0" destination="1249,1507,0,0" />
+	<teleporter source="5389,298,20,0" destination="1249,1507,0,0" />
+	<!--Orc Caves Lvl1 Entrance-->
+	<teleporter source="1389,829,20,0" destination="6100,303,0,0" bothways="true"/><!--Entrance 1-->
+	<teleporter source="1389,830,20,0" destination="6100,304,0,0" bothways="true"/>
+	<teleporter source="1397,864,20,0" destination="6128,419,0,0" bothways="true" /><!--Entrance 2-->
+	<!--<teleporter source="1403,1006,15,0" destination="6128,420,0,0" bothways="true" />-->
+	<teleporter source="6128,420,0,0" destination="1397,864,20,0" />
+	<!--Orc Caves Lvl1 to Lvl2-->
+	<teleporter source="5703,343,0,0" destination="6070,647,0,0" bothways="true"/><!--Entrance 1-->
+	<teleporter source="5703,344,0,0" destination="6070,648,0,0" bothways="true"/>
+	<teleporter source="5677,480,0,0" destination="6117,740,0,0" bothways="true"/><!--Entrance 2-->
+	<teleporter source="5677,481,0,0" destination="6117,741,0,0" bothways="true"/>
+
+</definitions>
