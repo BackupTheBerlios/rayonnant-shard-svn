@@ -4,6 +4,7 @@ Rayonnant YYYYMMDD (SVN):
 
 
 Rayonnant 20050306:
+	- Updated NPCs to follow the <skill id=""></skill> system.
 	- Established SVN
 	- New base file structure: shard/rayonnant/
 	- New release standards: shard/docs/release.html
